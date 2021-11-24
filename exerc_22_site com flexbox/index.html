@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=0"/>
+    <link rel="stylesheet" href="assests/css/template.css"/>
+    <link rel="shortcut icon" href="assests/images/favicon.ico.ico" type="image/x-icon">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display == 'flex';
+                }
+            });
+        };
+    </script>
+    <title>Site com FlexBox</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="Logo">
+                <a href=""><img src="assests/images/paula logo.png" alt=""></a>
+             </div>
+             <div class="Menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="">Home</a></li>
+                        <li><a href="">Studio Paula</a></li>
+                        <li><a href="">Modalidades</a></li>
+                        <li><a href="">Horarios</a></li>
+                        <li><a href="">Fotos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container column">
+           <div class="banner_headline">
+                <h1>Força e Dedicação</h1>
+                <h2>Saúde traz alegria</h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title1">Ganhe força</div>
+                    <div class="banner_desc">vamos estudar alguma coisa legal aqui</div>
+                    <a href="">Conhecer</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title2">Ganhe Saúde</div>
+                    <div class="banner_desc">vamos estudar alguma coisa legal aqui</div>
+                    <a href="">conhecer</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title3">Um corpo Bonito</div>
+                    <div class="banner_desc">vamos estudar alguma coisa legal aqui</div>
+                </div>
+            </div>
+         </div>
+    </section>
+    <section id="geral">
+        <div class="container">
+            <section>
+                 <div class="widget">
+                     <div class="widget_title">
+                     <div class="widget_title_text">Leris News</div>
+                     <div class="widget_title_bar"></div>
+                 </div>
+                 <div class="widget_body flex">
+                     
+                    <article>
+                        <a href="">
+                           <div class="news_data">
+                                <div class="news_posted_at">09 NOV 21</div>
+                               <div class="news_comments">2</div>
+                           </div>
+                           <div class="news_thumbnail">
+                                <img src="assests/images/forca02.jpg" alt="">
+                                <div class="news_title">
+                                     Lorem ipsum dolor 
+                                </div>
+                               <div class="news_resume">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla deleniti nisi nobis itaque optio amet necessitatibus a velit architecto animi maiores officia magnam adipisci, corporis accusamus tempora odit quos!
+                               </div>
+                            </div>
+                       </a>
+                    </article>
+                    <article>
+                        <a href="">
+                           <div class="news_data">
+                                <div class="news_posted_at">09 NOV 21</div>
+                               <div class="news_comments">2</div>
+                           </div>
+                           <div class="news_thumbnail">
+                                <img src="assests/images/pega3.jpg" alt="">
+                                <div class="news_title">
+                                     Lorem ipsum dolor 
+                                </div>
+                               <div class="news_resume">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla deleniti nisi nobis itaque optio amet necessitatibus a velit architecto animi maiores officia magnam adipisci, corporis accusamus tempora odit quos!
+                               </div>
+                            </div>
+                       </a>
+                    </article>
+                    <article>
+                        <a href="">
+                           <div class="news_data">
+                                <div class="news_posted_at">09 NOV 21</div>
+                               <div class="news_comments">2</div>
+                           </div>
+                           <div class="news_thumbnail">
+                                <img src="assests/images/pega2.jpeg" alt="">
+                                <div class="news_title">
+                                     Lorem ipsum dolor 
+                                </div>
+                               <div class="news_resume">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla deleniti nisi nobis itaque optio amet necessitatibus a velit architecto animi maiores officia magnam adipisci, corporis accusamus tempora odit quos!
+                               </div>
+                            </div>
+                       </a>
+                    </article>
+                    <article>
+                        <a href="">
+                           <div class="news_data">
+                                <div class="news_posted_at">09 NOV 21</div>
+                               <div class="news_comments">2</div>
+                           </div>
+                           <div class="news_thumbnail">
+                                <img src="assests/images/pega1.jpg" alt="">
+                                <div class="news_title">
+                                     Lorem ipsum dolor 
+                                </div>
+                               <div class="news_resume">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla deleniti nisi nobis itaque optio amet necessitatibus a velit architecto animi maiores officia magnam adipisci, corporis accusamus tempora odit quos!
+                               </div>
+                            </div>
+                       </a>
+                    </article>
+                 </div>
+                </div>        
+            </section>
+            <aside>
+                <div class="widget">
+                   <div class="widget_title">
+                   <div class="widget_title_text">Deparments</div>
+                   <div class="widget_title_bar"></div>
+                </div>
+                <div class="widget_body">
+                    ...
+                </div>
+           
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Proxima estapa ver</div>
+                        <div class="widget_title_bar"></div>
+                    </div>    
+                    <div class="widget_body">
+                        ...
+                    </div>
+        
+                </div>    
+            </aside>
+        </div> 
+  
+    </section>
+    
+    <footer>
+        <div class="container"></div>
+        aaaaaaaaaaaaaaaaaaaa
+    </footer>  
+</body>
+</html>

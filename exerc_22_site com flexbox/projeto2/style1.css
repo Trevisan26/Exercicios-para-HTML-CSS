@@ -1,0 +1,79 @@
+* {
+    font-family: arial;
+}
+
+body {
+   /* margin: 0;
+    padding: 0; 
+    background-color: rgb(184, 223, 241);
+    padding-bottom: 300px; */
+    
+    height: 100vh;
+    background-color: black;
+    background-image: url(../projeto2/img/fotoprincipal.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; /* contain  nao distorce a imagem cover melhor*/
+    
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-position: 100%;
+/*    width: 990px;
+    height: 100px;*/
+}
+.Logo {
+    background-position: left;
+    display: flex;
+    align-items: left;
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+nav ul,
+nav li {
+    list-style: none; /* tirar bolinha da lista */
+    margin: 0;
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none; /* tirar o sublinhado do link */
+    text-transform: uppercase; /* deixar tudo maiusculo*/
+    color: rgb(183, 116, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: right;
+    border: solid 1px #727272;
+    border-radius: 50px;
+    background-color: #8f33e6;
+}
+a {
+    margin: 20px;
+    font-size: 18px;
+    color: #0b6d9e;
+    transition: all 1s linear;
+}
+a:hover {
+    color: aqua;
+}
+
+
+

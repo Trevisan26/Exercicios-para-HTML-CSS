@@ -1,0 +1,264 @@
+* {
+    font-family: arial;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+   /* background-color: rgb(184, 223, 241);*/
+    padding-bottom: 300px;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    height: 100px;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none; /* tirar bolinha da lista */
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none; /* tirar o sublinhado do link */
+    text-transform: uppercase; /* deixar tudo maiusculo*/
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+/* hover ativer menu com mouse */
+nav .active a, 
+nav a:hover {
+    background-color: #39aae1;
+    color: #ffffff;
+
+}
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/forca03.jpeg');
+    background-position: center;
+    background-size: cover; /* reduz e aumenta a figura*/
+    height: 570px;
+}
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+   
+}
+.banner_headline h1 {
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow:2px 2px 0px #000000;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+   
+}
+
+.banner_headline h2 {
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow:2px 2px 0px #000000;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner_options {
+    height: 410px;
+    display: flex;
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex:1;
+    color: #ffffff;
+    height: 200px;
+    padding: 20px;
+}
+.banner1 {
+    background-color: #39aae1;
+    
+}
+.banner2 {
+    background-color: #0079c7;
+    
+}
+.banner3 {
+   background-color: #2b4c99;
+   
+}
+.banner_title1 {
+    font-size: 21px;
+}
+.banner_desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a {
+    display: inline-block; /*linha em volta do texto*/
+    border: 1px solid #ffffff;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none; /*tirar soblinhado*/
+
+}
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap; /* da a liberdade para quebrar as fotos, precisa determinar o tamanho  */
+}
+
+article {
+    flex: 1; /* dizer que tudo do mesmo tamanho */
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+article .news_data {
+    display: flex;
+}
+
+article .news_posted_at {
+    background-color: #2b4c99;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news_comments {
+    background-color: #39aae1;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+}
+article .news_thumbnail {
+    margin-top: 30px;
+}
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+article .new_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 23px;
+}
+article .news_resume {
+    color: #5c5c5c;
+    line-height: 20px; /* espacamento entre linhas*/
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line {
+    height: 3px;
+    background-color: #39aae1;
+}
+@media (max-width:600px) {
+    .banner_headline h1 {
+        font-size: 55px;
+    }
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+}
+nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+header {
+    height: auto;
+}
+.menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
